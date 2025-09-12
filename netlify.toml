@@ -1,0 +1,11 @@
+[build]
+  # Specify the build image to use Ubuntu 22.04 (Jammy) instead of deprecated Focal
+  image = "jammy"
+  
+  # Since this is a static site, we don't need a build command
+  # The publish directory is the root since index.html is in the root
+  publish = "."
+
+[build.environment]
+  # Set Node.js version if needed (optional for static sites)
+  NODE_VERSION = "18"
